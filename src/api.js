@@ -33,7 +33,6 @@ const router = express.Router()
 
  router.post('/predict', (req, res) => {
      const { data="NO DATA", module } = req.body
-     const { module } = req.query
      if(!module){
           res.json({errmsg: '必填module参数'})
           return 
