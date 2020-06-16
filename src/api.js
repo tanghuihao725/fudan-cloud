@@ -15,9 +15,9 @@ const router = express.Router()
  router.get('/train', (req, res) => {
     const { module } = req.query
     if(!module){
-        res.json({errmsg: '必填module参数'})
-        return 
-      } 
+          res.json({errmsg: '必填module参数'})
+          return 
+        } 
     const path = `modules/${module}/train.py`
     fs.exists(path, exists => {
         if(!exists){
@@ -32,7 +32,7 @@ const router = express.Router()
  })
 
  router.post('/predict', (req, res) => {
-     const { data } = req.body
+     const { data="NO DATA", module } = req.body
      const { module } = req.query
      if(!module){
           res.json({errmsg: '必填module参数'})
@@ -43,7 +43,7 @@ const router = express.Router()
          if(!exists){
             res.json({errmsg: 'module不存在'})
          }else{
-             fs.writeFileSync(`${modulePath}/prediction.txt`, data || 'NO DATA')
+             fs.writeFileSync(`${modulePath}/prediction.txt`, data)
              child_process.exec(`python3 ${modulePath}/test.py`, (err, stdout, stderr) => {
                 if(err) res.json({ errmsg: 'ERROR' })
                 const data = fs.readFileSync(`${modulePath}/result.txt`)
