@@ -18,13 +18,14 @@ const router = express.Router()
           res.json({errmsg: '必填module参数'})
           return 
         } 
-    const path = `modules/${module}/train.py`
-    fs.exists(path, exists => {
+    const modulePath = `modules/${module}`
+
+    fs.exists(`${modulePath}/train.py`, exists => {
         if(!exists){
             res.json({errmsg: 'module不存在'})
         }else{
-            child_process.exec(`python3 ${path}`, (err, stdout, stderr) => {
-                if(err) res.json({ errmsg: 'ERROR' })
+            child_process.exec(`cd ${modulePath} && python3 train.py`, (err, stdout, stderr) => {
+                if(err) res.json({ errmsg: err })
                 res.json({stdout, stderr})
             })   
         }
@@ -43,8 +44,8 @@ const router = express.Router()
             res.json({errmsg: 'module不存在'})
          }else{
              fs.writeFileSync(`${modulePath}/prediction.txt`, data)
-             child_process.exec(`python3 ${modulePath}/test.py`, (err, stdout, stderr) => {
-                if(err) res.json({ errmsg: 'ERROR' })
+             child_process.exec(`cd ${modulePath} && python3 test.py`, (err, stdout, stderr) => {
+                if(err) res.json({ errmsg: err })
                 const data = fs.readFileSync(`${modulePath}/result.txt`)
                 res.json({stdout, stderr, data: data.toString()})
              })
