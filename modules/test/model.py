@@ -1,12 +1,8 @@
 import time
 
-# path_arr = __file__.split('/')
-# path = "/".join(path_arr[0: -1])
-path = "."
-
 localtime = time.asctime( time.localtime(time.time()) )
 
-with open('./prediction.txt', 'r') as f:
+with open('./predictData.txt', 'r') as f:
     content = []
     line = f.readline()
     while line:
@@ -15,7 +11,7 @@ with open('./prediction.txt', 'r') as f:
     content_str = "".join(content)
 
 
-with open('./result.txt', 'w') as f:
+with open('result/predictResult.txt', 'w') as f:
     f.write('Your Data: ' + content_str + " ")
     f.write(localtime + " result for module test")
     print("result done")

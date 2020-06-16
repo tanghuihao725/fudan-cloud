@@ -46,7 +46,7 @@ const router = express.Router()
              fs.writeFileSync(`${modulePath}/predictData.txt`, data)
              child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
                 if(err) res.json({ errmsg: err })
-                const data = fs.readFileSync(`result/predictResult.txt`)
+                const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`)
                 res.json({stdout, stderr, data: data.toString()})
              })
          }
