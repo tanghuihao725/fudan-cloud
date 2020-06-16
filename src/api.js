@@ -33,20 +33,20 @@ const router = express.Router()
  })
 
  router.post('/predict', (req, res) => {
-     const { data="NO DATA", module } = req.body
-     if(!module){
-          res.json({errmsg: '必填module参数'})
+     const { data, module } = req.body
+     if(!module || !data){
+          res.json({errmsg: '必填module和data参数'})
           return 
         } 
      const modulePath = `modules/${module}`
-     fs.exists(`${modulePath}/test.py`, exists => {
+     fs.exists(`${modulePath}/model.py`, exists => {
          if(!exists){
             res.json({errmsg: 'module不存在'})
          }else{
-             fs.writeFileSync(`${modulePath}/prediction.txt`, data)
-             child_process.exec(`cd ${modulePath} && python3 test.py`, (err, stdout, stderr) => {
+             fs.writeFileSync(`${modulePath}/predictData.txt`, data)
+             child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
                 if(err) res.json({ errmsg: err })
-                const data = fs.readFileSync(`${modulePath}/result.txt`)
+                const data = fs.readFileSync(`result/predictResult.txt`)
                 res.json({stdout, stderr, data: data.toString()})
              })
          }
