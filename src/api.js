@@ -4,6 +4,12 @@ const fs = require('fs')
 
 const router = express.Router()
 
+// 获取时间戳
+const dateString = () => {
+    const date = new Date()
+    return `TIME: ${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
+}
+
 
 /**
  * 测试
@@ -28,17 +34,20 @@ const router = express.Router()
             res.json({errmsg: 'module不存在'})
         }else{
             res.json({msg: '正在训练，请使用/log接口查看训练结果'})
-            const date = new Date()
             // 写入时间戳
             fs.writeFileSync(
                 `${modulePath}/trainLog.txt`,
-                `TIME: ${date.toLocaleDateString()} ${date.toLocaleTimeString()}\n`
+                `${dateString()} 正在训练中... \n`
                 )
-            child_process.exec(`cd ${modulePath} && python3 train.py`, (err, stdout, stderr) => {
-                if(err) res.json({ errmsg: err })
-                // res.json({stdout, stderr})
-                fs.appendFileSync(`${modulePath}/trainLog.txt`, stdout)
-            })   
+            try {
+                child_process.exec(`cd ${modulePath} && python3 train.py`, (err, stdout, stderr) => {
+                    if(err) res.json({ errmsg: err })
+                    fs.appendFileSync(`${modulePath}/trainLog.txt`, `${dateString()} 训练完成 \n ${stdout}`)
+                })  
+            } catch (error) {
+                fs.appendFileSync(`${modulePath}/trainLog.txt`, `${dateString()} python执行阶段错误 \n ${String(error)}`)
+            }
+             
         }
     })
  })
@@ -74,11 +83,15 @@ const router = express.Router()
             res.json({errmsg: 'module不存在'})
          }else{
              fs.writeFileSync(`${modulePath}/predictData.txt`, data)
-             child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
-                if(err) res.json({ errmsg: err })
-                const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`)
-                res.json({stdout, stderr, data: data.toString()})
-             })
+             try {
+                child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
+                    if(err) res.json({ errmsg: err })
+                    const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`)
+                    res.json({stdout, stderr, data: data.toString()})
+                 })   
+             } catch (error) {
+                 res.json({errmsg: 'python执行阶段错误:' + String(error)})
+             }
          }
      })
  })
