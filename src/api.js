@@ -41,8 +41,11 @@ const dateString = () => {
                 )
             try {
                 child_process.exec(`cd ${modulePath} && python3 train.py`, (err, stdout, stderr) => {
-                    if(err) res.json({ errmsg: err })
-                    fs.appendFileSync(`${modulePath}/trainLog.txt`, `${dateString()} 训练完成 \n ${stdout}`)
+                    if(err){
+                        fs.appendFileSync(`${modulePath}/trainLog.txt`, `${dateString()} python执行阶段错误 \n ${String(err)}`)
+                    }
+                    else 
+                        fs.appendFileSync(`${modulePath}/trainLog.txt`, `${dateString()} 训练完成 \n ${stdout}`)
                 })  
             } catch (error) {
                 fs.appendFileSync(`${modulePath}/trainLog.txt`, `${dateString()} python执行阶段错误 \n ${String(error)}`)
@@ -85,7 +88,10 @@ const dateString = () => {
              fs.writeFileSync(`${modulePath}/predictData.txt`, data)
              try {
                 child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
-                    if(err) res.json({ errmsg: err })
+                    if(err){
+                        res.json({errmsg: 'python执行阶段错误:' + String(err)})
+                        return
+                    }
                     const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`)
                     res.json({stdout, stderr, data: data.toString()})
                  })   
