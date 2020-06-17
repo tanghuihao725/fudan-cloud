@@ -2,3 +2,4 @@ node_modules
 # 训练后生成数据
 trainLog.txt
 predictResult.txt
+log.txt
