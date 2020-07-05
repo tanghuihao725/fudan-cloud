@@ -78,7 +78,7 @@ router.get('/train', async (req, res) => {
             }
             else
               fs.appendFileSync(`${modulePathAfterProxy}/trainLog.txt`, `${dateString()} 训练完成 \n ${stdout}`)
-            writeLog(`api/train/${module}/id:${id} 训练完成`)
+              writeLog(`api/train/${module}/id:${id} 训练完成`)
   
           })
         } catch (error) {
@@ -134,7 +134,7 @@ router.post('/predict', (req, res) => {
   let modulePath = `modules/${module}`
 
   proxyModulePath(modulePath, module, doingPredict)
-  
+
   function doingPredict(modulePath){
     fs.exists(`${modulePath}/model.py`, exists => {
       if (!exists) {
