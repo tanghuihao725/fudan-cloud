@@ -120,6 +120,8 @@ router.get('/log', (req, res) => {
 })
 
 router.get('/logs', (req, res) => {
+  const { type } = req
+  if(type && type==='clear') child_process.exec('rm log.txt & touch log.txt')
   //  writeLog('发送Log成功')
   res.sendfile('log.txt')
 })
@@ -141,7 +143,7 @@ router.post('/predict', (req, res) => {
         res.json({ errmsg: 'module不存在' })
         writeLog(`api/predict/${module} 未找到指定module`)
       } else {
-        fs.writeFileSync(`${modulePath}/predictData.txt`, data)
+        fs.writeFileSync(`${modulePath}/predictData.txt`, data, { encoding: 'utf8' })
         try {
           child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
             if (err) {
@@ -150,7 +152,7 @@ router.post('/predict', (req, res) => {
               return
             }
             const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`)
-            res.json({ stdout, stderr, data: data.toString() })
+            res.json({ data: data.toString() })
             writeLog(`api/predict/${module} 预测成功 结果${data.toString()}`)
           })
         } catch (error) {
