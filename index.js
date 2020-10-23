@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const api = require('./src/api')
 const app = express()
+const imgApp = express()
 
 // 解析post请求中的body
 const bodyParser = require('body-parser')
@@ -22,9 +23,15 @@ app.all('*', function(req, res, next) {
  * 接口：
  */
 app.use('/api', api)
+imgApp.use('/img', express.static(path.join(__dirname, 'img')));
+
 
 const port = '6666'
+const imgPort = '7277'
 
 app.listen(port, ()=>{
     console.log(`Server running on port ${port}`)
 })
+ imgApp.listen(imgPort, ()=>{
+   console.log(`Image Server running on port ${imgPort}`)
+ })

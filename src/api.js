@@ -166,4 +166,47 @@ router.post('/predict', (req, res) => {
 
 })
 
+
+router.post('/predictExt', (req, res) => {
+  const { data, module } = req.body
+  if (!module) {
+    res.json({ errmsg: '必填module' })
+    writeLog("api/predict 未填module参数")
+    return
+  }
+  let modulePath = `modules/${module}`
+
+  proxyModulePath(modulePath, module, doingPredict)
+
+  function doingPredict(modulePath){
+    fs.exists(`${modulePath}/model.py`, exists => {
+      if (!exists) {
+        res.json({ errmsg: 'module不存在' })
+        writeLog(`api/predict/${module} 未找到指定module`)
+      } else {
+        if(data) fs.writeFileSync(`${modulePath}/predictData.txt`, data, { encoding: 'utf8' })
+        // 创建唯一标识id
+        const id = `${(new Date()).getTime()}`
+        try {
+          child_process.exec(`d: && cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
+            if (err) {
+              res.json({ errmsg: 'python执行阶段错误:' + String(err) })
+              writeLog(`api/predict/${module} 失败:python执行出现错误\n${String(err)}`)
+              return
+            }
+            const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`, { encoding: 'utf-8' })
+            res.json({ data: '预测成功，结果为:' +　data.toString().trim() })
+            console.log(String(data))
+            writeLog(`api/predict/${module} 预测成功 结果${data.toString()}`)
+          })
+        } catch (error) {
+          res.json({ errmsg: 'python执行阶段错误:' + String(error) })
+        }
+      }
+    })
+  }
+
+})
+
+
 module.exports = router
