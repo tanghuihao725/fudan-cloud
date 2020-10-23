@@ -71,7 +71,7 @@ router.get('/train', async (req, res) => {
           `${dateString()} 正在训练中... \n`
         )
         try {
-          child_process.exec(`cd ${modulePathAfterProxy} && python3 train.py`, (err, stdout, stderr) => {
+          child_process.exec(`d: && cd ${modulePathAfterProxy} && python3 train.py`, (err, stdout, stderr) => {
             if (err) {
               fs.appendFileSync(`${modulePathAfterProxy}/trainLog.txt`, `${dateString()} python执行阶段错误 \n ${String(err)}`)
               writeLog(`api/train/${module}/id:${id} 失败:python执行出现错误\n${err.toString()}`)
@@ -112,6 +112,7 @@ router.get('/log', (req, res) => {
       } else {
         // const data = fs.readFileSync(`${modulePath}/trainLog.txt`)
         writeLog(`api/log/${module} 发送日志成功`)
+        res.writeHead(200, {'Content-Type':'text/html;charset=utf-8'})
         res.sendfile(`${modulePath}/trainLog.txt`)
       }
     })
@@ -128,8 +129,8 @@ router.get('/logs', (req, res) => {
 
 router.post('/predict', (req, res) => {
   const { data, module } = req.body
-  if (!module || !data) {
-    res.json({ errmsg: '必填module和data参数' })
+  if (!module) {
+    res.json({ errmsg: '必填module' })
     writeLog("api/predict 未填module参数")
     return
   }
@@ -143,16 +144,17 @@ router.post('/predict', (req, res) => {
         res.json({ errmsg: 'module不存在' })
         writeLog(`api/predict/${module} 未找到指定module`)
       } else {
-        fs.writeFileSync(`${modulePath}/predictData.txt`, data, { encoding: 'utf8' })
+        if(data) fs.writeFileSync(`${modulePath}/predictData.txt`, data, { encoding: 'utf8' })
         try {
-          child_process.exec(`cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
+          child_process.exec(`d: && cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
             if (err) {
               res.json({ errmsg: 'python执行阶段错误:' + String(err) })
               writeLog(`api/predict/${module} 失败:python执行出现错误\n${String(err)}`)
               return
             }
-            const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`)
-            res.json({ data: data.toString() })
+            const data = fs.readFileSync(`${modulePath}/result/predictResult.txt`, { encoding: 'utf-8' })
+            res.json({ data: '预测成功，结果为:' +　data.toString().trim() })
+            console.log(String(data))
             writeLog(`api/predict/${module} 预测成功 结果${data.toString()}`)
           })
         } catch (error) {

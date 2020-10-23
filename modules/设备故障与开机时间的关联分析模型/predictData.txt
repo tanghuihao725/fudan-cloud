@@ -1,0 +1,1 @@
+on_time,start_time_type,close_time_type,busy_time,free_time,d_age,d_type,is_fault 3,8,7,8,8,2,3,1 1,6,7,8,2,10,1,0 3,2,7,6,7,1,1,0 2,8,6,6,10,1,2,1 2,7,5,1,8,8,1,1

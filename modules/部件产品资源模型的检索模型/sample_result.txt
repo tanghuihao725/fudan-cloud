@@ -1,0 +1,25 @@
+Similarity:0.8994595692872492
+Required 8.0 day(s)
+Required device_1 device_2 device_3 device_5 device_7 device_8 device_9
+Required material_0 material_3 material_4 material_8 material_9
+************************************
+Similarity:0.8945908269553148
+Required 1.0 day(s)
+Required device_0 device_3 device_4 device_6
+Required material_0 material_2 material_4 material_5 material_6 material_8 material_9
+************************************
+Similarity:0.893074163905137
+Required 5.0 day(s)
+Required device_2 device_3 device_5 device_6 device_7 device_8
+Required material_0 material_2 material_3 material_8
+************************************
+Similarity:0.8900345486497454
+Required 1.0 day(s)
+Required device_1 device_8 device_9
+Required material_1 material_2 material_4 material_5 material_7 material_8
+************************************
+Similarity:0.8881819188017972
+Required 2.0 day(s)
+Required device_1 device_2 device_4 device_5 device_8 device_9
+Required material_0 material_2 material_4
+************************************

@@ -1,0 +1,400 @@
+Need 4.946048534401129 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.12934028456904 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.680487236229846 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.604166669282995 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.288240792721789 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.947329813808911 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.145187849888917 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.826830989016419 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.6442123046444985 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.92783272728961 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.951154415930206 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.177389482217769 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.179513977093382 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.239527101668315 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.715939501348617 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.63426398025378 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.001903926722786 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.125428989490152 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.774738137364275 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.60411466478642 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.584375444383861 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.9902100965761615 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.458011641116023 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.836545738088209 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.952916795353584 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.831537307182529 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.610417855278636 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.775648434209525 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.627694103114426 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.584512519233222 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.661905066336754 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.270151882386213 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.73345784215569 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.56632944054876 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.9457678399179255 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.452689053756285 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.171933328814371 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.943186693824719 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.533584853515862 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.7124743193053025 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.5503219218489 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.541943611452726 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.241893695291027 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.799109090208726 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.270207234701477 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.847074068752644 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.471694761717786 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.402163784001998 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.410092485568076 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.534477787779987 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.5752394100505445 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.022956055646664 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.286537825786459 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.822094971546216 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.550920482904522 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.330004231649083 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.929778492782786 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.491201673264483 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.985527872383154 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.997733116673036 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.696419999668162 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.3323833232950975 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.156067708025977 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.692367450748593 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.813171375435816 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.333939081340207 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.99199912942371 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.294190925938261 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.372325494055755 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.6698979375753655 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.208875310703507 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.503354275666953 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.214857547350145 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.8798374498044685 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.71957319920767 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.293167167567131 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.562190032554381 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.4903237644897755 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.658529849886842 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.176349253601175 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.730196191227417 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.418286879531195 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.278073223820755 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 3.6544144060113446 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.286797255600809 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.556461549354814 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.239414913617281 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.885822342463218 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.204384450612187 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.538992682626404 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.531778183008936 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.272678316422639 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.385827890448399 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.028519610179749 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.3271194573353515 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.221453032904478 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.9538729318648995 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.105130162059145 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 4.789774649450866 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
+Need 5.383207387283893 day(s)
+Require device_0 device_1 device_2 device_3 device_4 device_5 device_7
+Require material_0 material_3 material_5 material_8
+******************
