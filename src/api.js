@@ -191,13 +191,15 @@ function doingPredict(modulePath) {
         try {
           child_process.exec(`cd EXT_RESULTS && mkdir ${id}`)
           // child_process.exec(`d: && cd ${modulePath} && python3 model.py`, (err, stdout, stderr) => {
-          child_process.exec(`cd ${modulePath} && python3 model.py --id '${id}'`, (err, stdout, stderr) => {})
+          child_process.exec(`d: && cd ${modulePath} && python3 model.py --id ${id}`, (err, stdout, stderr) => {
+            console.log({err, stdout, stderr})
+          })
         } catch (error) {
           res.json({ errmsg: 'python执行阶段错误:' + String(error) })
         }
         res.json({
           message: '结果请点击url查看',
-          url: `http://117.73.9.94:7277/ext_page/#/?module=${module}&id=${id}`
+          url: `http://117.73.9.94:7277/#/?module=${module}&id=${id}`
         })
       }
     })
@@ -222,7 +224,7 @@ router.get('/fetchExtResults', (req,res) => {
     const resultInline = fs.readFileSync(resultPath).toString().split('\n')
     resultInline.forEach(line => {
       const [code, res] = line.split(' ')
-      if(!imgMap) return
+      if(!imgMap || !code) return
       result[code] = {
         id: parseInt(code,10) + 1,
         result: res,

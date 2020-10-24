@@ -54,7 +54,7 @@ export default {
         if (type === 1) {
           this.resultsContent = result;
           this.statu = 2;
-          clearInterval(clock);
+          //clearInterval(clock);
         }
       });
     }, 1000);
