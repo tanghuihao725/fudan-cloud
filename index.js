@@ -24,6 +24,7 @@ app.all('*', function (req, res, next) {
  */
 app.use('/api', api)
 extApp.use('/ext', express.static(path.join(__dirname, 'EXT_RESULTS')));
+extApp.use('/ext_page', express.static(path.join(__dirname, 'dist')));
 extApp.use('/api', api)
 
 

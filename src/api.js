@@ -197,7 +197,7 @@ function doingPredict(modulePath) {
         }
         res.json({
           message: '结果请点击url查看',
-          url: `http://117.73.9.94:8080/#/?module=${module}&id=${id}`
+          url: `http://117.73.9.94:7277/ext_page/#/?module=${module}&id=${id}`
         })
       }
     })
