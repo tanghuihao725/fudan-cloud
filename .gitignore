@@ -1,4 +1,6 @@
 node_modules
+
+EXT_RESULTS/*
 # 训练后生成数据
 trainLog.txt
 predictResult.txt
