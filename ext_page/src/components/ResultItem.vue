@@ -50,6 +50,7 @@ export default {
     flex-direction: column;
     width: 19%;
     padding: 0 3%;
+    margin-top: 30px;
 
     .img-wrapper{
         display: flex;
