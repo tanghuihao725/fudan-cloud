@@ -210,7 +210,7 @@ router.get('/fetchExtResults', (req,res) => {
   const { id } = req.query
   const rootPath = `./EXT_RESULTS/${id}`
   const dir =fs.readdirSync(rootPath)
-  let resultPath = '', imgMap = {}
+  let resultPath = '', imgMap = {}, end = false
   // 文件处理 分为result.txt 和 图片类型
   dir.forEach(dirPath => {
     if(dirPath === 'result.txt') resultPath = `${rootPath}/result.txt`
@@ -225,13 +225,16 @@ router.get('/fetchExtResults', (req,res) => {
     resultInline.forEach(line => {
       const [code, res] = line.split(' ')
       if(!imgMap || !code) return
-      result[code] = {
-        id: parseInt(code,10) + 1,
-        result: res,
-        img: imgMap[code]
-      }
+      if(code.toUpperCase() === 'END') end = true
+      else {
+        result[code] = {
+          id: parseInt(code,10) + 1,
+          result: res,
+          img: imgMap[code]
+        }
+      } 
     })
-    res.json({ type: 1, result })
+    res.json({ type: 1, result, end })
   }
 })
 module.exports = router

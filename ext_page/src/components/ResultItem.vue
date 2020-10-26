@@ -34,7 +34,7 @@ export default {
         }
     },
     mounted(){
-        this.qrcode()
+        // this.qrcode()
     },
     components:{
         QRCode
