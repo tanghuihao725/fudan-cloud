@@ -147,6 +147,7 @@ export default {
     border: 3px solid black;
     min-height: 400px;
     border-radius: 10px;
+    display: flex;
   }
 }
 </style>

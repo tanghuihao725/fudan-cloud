@@ -1,18 +1,20 @@
 <template>
     <div class="result-item">
-        <div class="id">
-            图片编号：{{id}}
-        </div>
-        <div class="img-wrapper">
+       
+        <div class="img-wrapper row">
             原图
             <a :href="img" target="_blank">
                 <img :src="img" class="img">
             </a>
             模型输出
         </div>
-        <div class="result-wrapper" :style="{color: result.indexOf('无')== -1?'#f40':'teal'}">
+        <div class="id row">
+            图片编号：{{id}}
+        </div>
+        <div class="result-wrapper row" :style="{color: result.indexOf('无')== -1?'#f40':'teal'}">
             {{result}}
         </div>
+         
         
 
     </div>
@@ -46,10 +48,8 @@ export default {
 .result-item{
     margin: 30px 0;
     display: flex;
-    padding: 0 20%;
-    align-items: center;
-    justify-content: space-around;
-    // border: 1px solid red;
+    flex-direction: column;
+    margin: 40px 80px;
 
     .img-wrapper{
         display: flex;
@@ -61,7 +61,9 @@ export default {
         height: 200px;
         margin: 0 5px;
     }
-
-
+    .row{
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 </style>
