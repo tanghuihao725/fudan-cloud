@@ -11,7 +11,7 @@
     <div v-else>
       <div class="waiting-tip" >
         <img v-show="statu === 1" src="../assets/loading.gif" class="mini-loading" />
-        <p :style="{color: statu === 1 ? 'yellow' : 'green'}">
+        <p :style="{color: statu === 1 ? 'tomato' : 'teal'}">
         {{ statu === 1 ? `程序运行中，等待结果` : '已完成'}}
         {{showTimePass}}
         s

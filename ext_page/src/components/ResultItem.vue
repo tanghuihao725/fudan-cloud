@@ -10,7 +10,7 @@
             </a>
             模型输出
         </div>
-        <div class="result-wrapper" :style="{color: result==='有质量问题'?'red':'black'}">
+        <div class="result-wrapper" :style="{color: result.indexOf('无')== -1?'#f40':'teal'}">
             {{result}}
         </div>
         
