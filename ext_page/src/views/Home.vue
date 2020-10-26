@@ -78,7 +78,7 @@ export default {
       return Math.floor(timeSec);
     },
     getExt() {
-      // return axios.get(`${baseUrl}/api/fetchExtResults?id=${this.id}`)
+      return axios.get(`${baseUrl}/api/fetchExtResults?id=${this.id}`)
       return new Promise((resolve, reject) => {
         // resolve({data: {type: 0}})
         resolve({
