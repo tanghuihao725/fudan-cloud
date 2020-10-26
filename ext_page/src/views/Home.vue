@@ -78,7 +78,7 @@ export default {
       return Math.floor(timeSec);
     },
     getExt() {
-      return axios.get(`${baseUrl}/api/fetchExtResults?id=${this.id}`)
+      // return axios.get(`${baseUrl}/api/fetchExtResults?id=${this.id}`)
       return new Promise((resolve, reject) => {
         // resolve({data: {type: 0}})
         resolve({
@@ -119,7 +119,7 @@ export default {
     color: #666;
   }
   .info {
-    margin: 60px 0;
+    margin: 20px 0;
     font-size: 30px;
   }
 
@@ -128,6 +128,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
     .loading {
       width: 50%;
       max-width: 400px;
@@ -145,7 +146,8 @@ export default {
   .result-content {
     width: 100%;
     border: 3px solid black;
-    min-height: 400px;
+    height: 626px;
+    overflow: auto;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
