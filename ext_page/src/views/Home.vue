@@ -148,6 +148,7 @@ export default {
     min-height: 400px;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
   }
 }
 </style>

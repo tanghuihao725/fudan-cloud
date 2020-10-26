@@ -46,10 +46,10 @@ export default {
 
 <style lang="less" scoped>
 .result-item{
-    margin: 30px 0;
     display: flex;
     flex-direction: column;
-    margin: 40px 80px;
+    width: 19%;
+    padding: 0 3%;
 
     .img-wrapper{
         display: flex;
